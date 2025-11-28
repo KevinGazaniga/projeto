@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx prisma migrate deploy && npx tsx src/index.ts"
+    "start": "npx prisma migrate dev --name init && npx prisma generate && npx tsx src/index.ts"
   },
   "type": "module",
   "engines": {
